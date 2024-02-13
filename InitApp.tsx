@@ -136,15 +136,6 @@ const InitApp = ({ persistor }: Props) => {
                       <AppNavigator
                         onNavigationStateChange={onNavigationStateChange}
                       />
-                      <View
-                        style={{
-                          flex: 1,
-                          alignSelf: 'center',
-                          backgroundColor: 'red',
-                          width: 50,
-                          height: 100,
-                        }}
-                      />
                     </AppSwitcherProvider>
                   </ErrorBoundary>
                 </DBStateProvider>
