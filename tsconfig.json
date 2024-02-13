@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "lib": ["es6", "dom"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": true,
+    "target": "esnext",
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "~assets/*": ["src/assets/*"],
+      "~common/*": ["src/common/*"],
+      "~features/*": ["src/features/*"],
+      "~helpers/*": ["src/helpers/*"],
+      "~navigation/*": ["src/navigation/*"],
+      "~redux/*": ["src/redux/*"],
+      "~themes/*": ["src/themes/*"],
+      "~styled/*": ["src/styled/*"],
+      "~themes": ["src/themes"],
+      "~styled": ["src/styled"],
+      "~i18n": ["i18n"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js",
+    "src/features/bible/bibleWebView/**/*",
+    "src/features/studies/studiesWebView/**/*"
+  ],
+  "extends": "expo/tsconfig.base"
+}
